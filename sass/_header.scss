@@ -1,0 +1,58 @@
+#header {
+	background-color: $color-primary;
+	color: $white;
+}
+
+.top-header {
+
+	.site-logo {
+
+		.logo {
+			display: inline-block;
+			border: 2px solid $white;
+			font-size: 1.5rem; //24px
+			font-weight: 300;
+			padding: 0.21em 1.04em;
+
+			span {
+				font-weight: 700;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+.header-nav {
+
+	ul {
+		text-align: right;
+		padding-top: 1rem;
+
+		li {
+			display: inline-block;
+			margin-left: 1.25rem;
+
+			a {
+				color: $white;
+				font-weight: 300;
+				font-size: 0.875rem;
+			}
+		}
+	}
+}
+
+.cta {
+	text-align: center;
+	padding: 7.5em 0 4.69em;
+
+	.site-slogan {
+		font-size: 2.5rem; //40px
+		font-weight: 300;
+		text-transform: uppercase;
+		margin-bottom: 1.75em;
+
+		span {
+			font-weight: 700;
+		}
+	}
+}

@@ -1,0 +1,50 @@
+// Vertical rhythm
+@include establish-baseline;
+
+// My reset
+h1 {
+	@include adjust-font-size-to(36px);
+}
+
+h2 {
+	@include adjust-font-size-to(24px);
+}
+
+h3 {
+	@include adjust-font-size-to(21px);
+}
+
+h1, h2, h3 {
+	margin-top: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+	outline: none;
+}
+
+
+// 
+body {
+	background-color: lighten($color-primary, 30%);
+	font-family: $font-family-primary;
+	font-weight: 400;
+	// @include debug-vertical-alignment;
+}
+
+.portfolio-description,
+.site-content,
+.work-with {
+	background-color: $gray;
+}

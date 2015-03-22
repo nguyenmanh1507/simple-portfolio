@@ -1,0 +1,52 @@
+/* Layouts */
+
+$susy: (
+	global-box-sizing: border-box,
+	use-custom: (rem: true)
+);
+
+@include border-box-sizing;
+
+.container {
+	@include container(58.75rem); //940px
+}
+
+#header,
+.portfolio-description,
+.site-content,
+.work-with,
+#footer {
+	@include span(10 of 10);
+	@include clearfix;
+	padding: 1.25rem 1.875rem;
+}
+
+// Header layout
+.top-header {
+	@include span(10 of 10);
+	@include clearfix;
+
+	.site-logo {
+		@include span(5 of 10);
+	}
+
+	.header-nav {
+		@include span(5 of 10 last);
+	}
+}
+
+.cta {
+	@include span(full);
+}
+
+// Footer
+#footer {
+
+	.social-network {
+		@include span(5 of 10);
+	}	
+
+	.copyright-info {
+		@include span(5 of 10 last);
+	}
+}

@@ -1,0 +1,119 @@
+// Portfolio description section
+.portfolio-description {
+	color: $dark-gray;
+	text-align: center;
+	padding-top: 5.3125rem;
+
+	.sep-icon {
+		display: inline-block;
+		margin-bottom: 1.25em;
+	}
+
+	.pd-heading {
+		font-size: 1.5625rem; //25px
+		margin-bottom: 0.8em;
+	}
+
+	.pd-content {
+		font-size: 0.875rem;
+
+		@media (min-width: 50rem) {
+			width: 50%;
+			margin: 0 auto;
+		}
+	}
+}
+
+.site-content {
+	color: $color-primary;
+
+	&.front-page-work {
+		text-align: center;
+	}
+
+	.work-list-items {
+
+		.work-item {
+			display: inline-block;
+			width: 45%;
+			margin-bottom: 5%;
+			margin-right: 5%;
+			position: relative;
+
+			&:hover {
+
+				.title-overlay {
+					@include opacity(1);
+				}
+			}
+
+			a {
+				color: $white;
+				display: block;
+			}
+
+			img {
+				max-width: 100%;
+				display: block;
+			}
+
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
+
+			.title-overlay {
+				background-color: rgba($color-primary, .7);
+				position: absolute;
+				top: 7%;
+				left: 7%;
+				right: 7%;
+				bottom: 7%;
+				@include opacity(0);
+				@include transition(opacity .4s ease-in);
+
+				.item-title {
+					font-size: 1.25rem;
+					margin-top: 18%;
+					position: relative;
+
+					&:after {
+						content: '';
+						height: 2px;
+						width: 100px;
+						background-color: $white;
+						position: absolute;
+						left: 50%;
+						bottom: -17px;
+						margin-left: -50px;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Keyframes
+@include keyframes(zoom) {
+	100% {
+		opacity: 1;
+	}
+}
+
+.work-with {
+	text-align: center;
+	color: $color-primary;
+	padding-bottom: 6.25rem;
+
+	.site-title {
+		padding-top: 6.25rem;
+	}
+
+	.clients-list {
+
+		.client {
+			display: inline-block;
+			vertical-align: top;
+			padding: 0 1.25rem;
+		}
+	}
+}

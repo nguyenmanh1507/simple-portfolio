@@ -1,0 +1,33 @@
+// Button
+.btn {
+	display: inline-block;
+	padding: 0.59em 3.82em;
+	border-radius: 0.625rem;
+	font-size: 1.0625rem;
+
+	&.btn-cta {
+		background-color: $color-secondary;
+		color: $white;
+	}
+
+	&.btn-more {
+		border: 2px solid $color-primary;
+		color: lighten($color-primary, 10%);
+	}
+}
+
+
+
+
+// Hide text
+.sr-only {
+	@include hide-text;
+}
+
+// page title
+
+.site-title {
+	font-size: 1.5625rem;
+	text-align: center;
+	color: $color-primary;
+}
