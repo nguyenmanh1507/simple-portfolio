@@ -462,6 +462,18 @@ body {
   font-weight: 700;
 }
 
+/* line 60, sass/_header.scss */
+.page-header {
+  padding: 9.375rem 0 2.5rem;
+  text-align: center;
+}
+/* line 64, sass/_header.scss */
+.page-header .page-title {
+  text-transform: uppercase;
+  font-size: 1.875rem;
+  font-weight: 300;
+}
+
 /* line 2, sass/_content.scss */
 .portfolio-description {
   color: #444444;
